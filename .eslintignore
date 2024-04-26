@@ -4,4 +4,4 @@
 /playwright.config.ts
 /src/*.js
 
-amplify-codegen-temp/models/models
+/amplify/**/*
