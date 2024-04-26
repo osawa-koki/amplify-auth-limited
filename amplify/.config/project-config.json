@@ -6,7 +6,7 @@
     "framework": "Next.js - SSG",
     "config": {
       "SourceDir": "./src/",
-      "DistributionDir": "build",
+      "DistributionDir": "./out/",
       "BuildCommand": "yarn build"
     }
   },
