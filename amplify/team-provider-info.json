@@ -10,6 +10,14 @@
       "StackName": "amplify-amplifyauthlimited-dev-160603",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:938385028059:stack/amplify-amplifyauthlimited-dev-160603/72eb6b60-039b-11ef-b0c0-0ef0a7b32a81",
       "AmplifyAppId": "d1eso5p47888rj"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1eso5p47888rj",
+          "type": "manual"
+        }
+      }
     }
   },
   "prod": {
@@ -23,6 +31,14 @@
       "StackName": "amplify-amplifyauthlimited-prod-162130",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:938385028059:stack/amplify-amplifyauthlimited-prod-162130/9b3befc0-039d-11ef-a3d0-0639a17afc03",
       "AmplifyAppId": "d1eso5p47888rj"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1eso5p47888rj",
+          "type": "manual"
+        }
+      }
     }
   }
 }
