@@ -17,6 +17,14 @@
           "appId": "d1eso5p47888rj",
           "type": "manual"
         }
+      },
+      "auth": {
+        "amplifyauthlimited5f1f1e70": {}
+      },
+      "function": {
+        "amplifyauthlimited5f1f1e70PreSignup": {
+          "DOMAINALLOWLIST": "example.com"
+        }
       }
     }
   },
