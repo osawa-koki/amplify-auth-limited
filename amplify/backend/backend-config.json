@@ -60,6 +60,22 @@
         }
       ]
     },
+    "AMPLIFY_function_amplifyauthlimited5f1f1e70PreSignup_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyauthlimited5f1f1e70PreSignup"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyauthlimited5f1f1e70PreSignup_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyauthlimited5f1f1e70PreSignup"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {
