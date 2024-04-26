@@ -16,14 +16,12 @@ const getSecret = async (secretName: string): Promise<string | null> => {
   return Parameter?.Value ?? null
 }
 
-const ALLOWED_EMAIL_REGEX_LIST = (process.env.ALLOWED_EMAIL_REGEX_LIST ?? '').split(',').map((d) => d.trim())
-
 exports.handler = async (event: PreSignUpTriggerEvent) => {
   const { email } = event.request.userAttributes
 
-  const isAllowed = ALLOWED_EMAIL_REGEX_LIST.some((regex) => new RegExp(regex).test(email))
+  const ALLOWED_EMAIL_REGEX_LIST = (await getSecret('ALLOWED_EMAIL_REGEX_LIST'))?.split(',').map((a) => a.trim()) ?? []
 
-  throw new Error(JSON.stringify(process.env))
+  const isAllowed = ALLOWED_EMAIL_REGEX_LIST.some((regex) => new RegExp(regex).test(email))
 
   if (!isAllowed) {
     throw new Error(`\nallowed email regex list: ${ALLOWED_EMAIL_REGEX_LIST.join(', ')}`)

@@ -106,7 +106,7 @@
             "DOMAINBLACKLIST": {
               "Ref": "DOMAINBLACKLIST"
             },
-            "piyopiyo": {
+            "ALLOWED_EMAIL_REGEX_LIST": {
               "Fn::Join": [
                 "",
                 [
@@ -124,7 +124,7 @@
                       }
                     ]
                   },
-                  "piyopiyo"
+                  "ALLOWED_EMAIL_REGEX_LIST"
                 ]
               ]
             }
