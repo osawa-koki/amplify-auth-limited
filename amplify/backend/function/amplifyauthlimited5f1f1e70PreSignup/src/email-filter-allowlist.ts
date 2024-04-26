@@ -24,7 +24,7 @@ exports.handler = async (event: PreSignUpTriggerEvent) => {
   const isAllowed = ALLOWED_EMAIL_REGEX_LIST.some((regex) => new RegExp(regex).test(email))
 
   if (!isAllowed) {
-    throw new Error(`\nallowed email regex list: ${ALLOWED_EMAIL_REGEX_LIST.join(', ')}`)
+    throw new Error(`\nallowed email regex list: ${ALLOWED_EMAIL_REGEX_LIST.map((a) => `'${a}'`).join(', ')}`)
   }
 
   return event
