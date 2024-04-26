@@ -1,0 +1,16 @@
+{
+  "trigger": true,
+  "modules": [
+    "email-filter-allowlist"
+  ],
+  "parentResource": "amplifyauthlimited5f1f1e70",
+  "functionName": "amplifyauthlimited5f1f1e70PreSignup",
+  "resourceName": "amplifyauthlimited5f1f1e70PreSignup",
+  "parentStack": "auth",
+  "triggerEnvs": "[]",
+  "triggerDir": "/snapshot/amplify-cli/build/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/PreSignup",
+  "triggerTemplate": "PreSignup.json.ejs",
+  "triggerEventPath": "PreSignup.event.json",
+  "roleName": "amplifyauthlimited5f1f1e70PreSignup",
+  "skipEdit": true
+}
