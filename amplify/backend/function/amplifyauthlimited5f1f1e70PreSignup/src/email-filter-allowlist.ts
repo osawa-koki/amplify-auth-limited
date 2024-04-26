@@ -5,7 +5,7 @@
  */
 exports.handler = async (event) => {
   // allowed domains
-  const ald = process.env.DOMAINALLOWLIST.split(',').map((d) => d.trim());
+  const ald = process.env.ALLOWEDEMAILREGEXLIST.split(',').map((d) => d.trim());
 
   const { email } = event.request.userAttributes;
   const domain = email.substring(email.indexOf('@') + 1);

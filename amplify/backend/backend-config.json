@@ -52,7 +52,7 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_amplifyauthlimited5f1f1e70PreSignup_DOMAINALLOWLIST": {
+    "AMPLIFY_function_amplifyauthlimited5f1f1e70PreSignup_ALLOWEDEMAILREGEXLIST": {
       "usedBy": [
         {
           "category": "function",
