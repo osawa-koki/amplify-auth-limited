@@ -26,7 +26,7 @@
         "amplifyauthlimited5f1f1e70PreSignup": {
           "DOMAINALLOWLIST": "example.com",
           "deploymentBucketName": "amplify-amplifyauthlimited-dev-160603-deployment",
-          "s3Key": "amplify-builds/amplifyauthlimited5f1f1e70PreSignup-45303773674c51625158-build.zip"
+          "s3Key": "amplify-builds/amplifyauthlimited5f1f1e70PreSignup-5a672f324f574f474a6d-build.zip"
         }
       }
     }
