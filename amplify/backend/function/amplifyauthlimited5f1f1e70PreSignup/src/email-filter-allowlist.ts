@@ -10,14 +10,12 @@ const ALLOWED_EMAIL_REGEX_LIST = process.env.ALLOWED_EMAIL_REGEX_LIST.split(',')
  * @type {import('@types/aws-lambda').PreSignUpTriggerHandler}
  */
 exports.handler = async (event) => {
-  const allowedEmailRegexList = process.env.ALLOWEDEMAILREGEXLIST.split(',').map((d) => d.trim());
-
   const { email } = event.request.userAttributes;
 
-  const isAllowed = allowedEmailRegexList.some((regex) => new RegExp(regex).test(email));
+  const isAllowed = ALLOWED_EMAIL_REGEX_LIST.some((regex) => new RegExp(regex).test(email));
 
   if (!isAllowed) {
-    throw new Error(ALLOWED_EMAIL_REGEX_LIST.join(', ') + ' are the only allowed domains');
+    throw new Error(`\nallowed email regex list: ${ALLOWED_EMAIL_REGEX_LIST.join(', ')}`);
   }
 
   return event;

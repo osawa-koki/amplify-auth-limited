@@ -24,9 +24,9 @@
       },
       "function": {
         "amplifyauthlimited5f1f1e70PreSignup": {
-          "ALLOWEDEMAILREGEXLIST": "example.com",
+          "DOMAINALLOWLIST": "example.com",
           "deploymentBucketName": "amplify-amplifyauthlimited-dev-160603-deployment",
-          "s3Key": "amplify-builds/amplifyauthlimited5f1f1e70PreSignup-387836796645634c794a-build.zip"
+          "s3Key": "amplify-builds/amplifyauthlimited5f1f1e70PreSignup-6f58364e78697a2b6233-build.zip"
         }
       }
     }

@@ -6,7 +6,7 @@
       "Type": "String",
       "Default": ""
     },
-    "ALLOWEDEMAILREGEXLIST": {
+    "DOMAINALLOWLIST": {
       "Type": "String",
       "Default": ""
     },
@@ -97,8 +97,8 @@
             "REGION": {
               "Ref": "AWS::Region"
             },
-            "ALLOWEDEMAILREGEXLIST": {
-              "Ref": "ALLOWEDEMAILREGEXLIST"
+            "DOMAINALLOWLIST": {
+              "Ref": "DOMAINALLOWLIST"
             },
             "DOMAINBLACKLIST": {
               "Ref": "DOMAINBLACKLIST"
