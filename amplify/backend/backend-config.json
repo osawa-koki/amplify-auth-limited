@@ -76,6 +76,14 @@
         }
       ]
     },
+    "AMPLIFY_function_amplifyauthlimited5f1f1e70PreSignup_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyauthlimited5f1f1e70PreSignup"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {
