@@ -2,3 +2,6 @@
 /out/
 /playwright-report/
 /playwright.config.ts
+/src/*.js
+
+amplify-codegen-temp/models/models
