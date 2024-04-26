@@ -27,7 +27,7 @@
           "DOMAINALLOWLIST": "example.com",
           "secretsPathAmplifyAppId": "d1eso5p47888rj",
           "deploymentBucketName": "amplify-amplifyauthlimited-dev-160603-deployment",
-          "s3Key": "amplify-builds/amplifyauthlimited5f1f1e70PreSignup-6b6949796d47444e554a-build.zip"
+          "s3Key": "amplify-builds/amplifyauthlimited5f1f1e70PreSignup-39726f76626e2f637342-build.zip"
         }
       }
     }

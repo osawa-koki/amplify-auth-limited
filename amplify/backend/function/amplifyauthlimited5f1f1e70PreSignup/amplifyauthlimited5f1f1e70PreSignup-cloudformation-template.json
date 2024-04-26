@@ -105,6 +105,28 @@
             },
             "DOMAINBLACKLIST": {
               "Ref": "DOMAINBLACKLIST"
+            },
+            "piyopiyo": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "amplifyauthlimited5f1f1e70PreSignup"
+                      }
+                    ]
+                  },
+                  "piyopiyo"
+                ]
+              ]
             }
           }
         },
