@@ -26,7 +26,7 @@
         "amplifyauthlimited5f1f1e70PreSignup": {
           "ALLOWEDEMAILREGEXLIST": "example.com",
           "deploymentBucketName": "amplify-amplifyauthlimited-dev-160603-deployment",
-          "s3Key": "amplify-builds/amplifyauthlimited5f1f1e70PreSignup-45696d376b66484a6748-build.zip"
+          "s3Key": "amplify-builds/amplifyauthlimited5f1f1e70PreSignup-387836796645634c794a-build.zip"
         }
       }
     }

@@ -4,14 +4,14 @@
  * @type {import('@types/aws-lambda').PreSignUpTriggerHandler}
  */
 exports.handler = async (event) => {
-  // allowed domains
-  const ald = process.env.ALLOWEDEMAILREGEXLIST.split(',').map((d) => d.trim());
+  const allowedEmailRegexList = process.env.ALLOWEDEMAILREGEXLIST.split(',').map((d) => d.trim());
 
   const { email } = event.request.userAttributes;
-  const domain = email.substring(email.indexOf('@') + 1);
 
-  if (!ald.includes(domain)) {
-    throw new Error(`Invalid email domain: ${domain}`);
+  const isAllowed = allowedEmailRegexList.some((regex) => new RegExp(regex).test(email));
+
+  if (!isAllowed) {
+    throw new Error('Email address is not allowed');
   }
 
   return event;
